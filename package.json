@@ -1,0 +1,35 @@
+{
+  "name": "stat-tracker",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "material-ui": "^0.20.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-grid-layout": "^0.16.6",
+    "react-redux": "^5.0.7",
+    "react-scripts-ts": "2.13.0",
+    "redux": "^3.7.2"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-ts": "react-scripts-ts start",
+    "start": "npm-run-all -p watch-css start-ts",
+    "build-ts": "react-scripts-ts build",
+    "build": "npm-run-all build-css build-ts",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.2.0",
+    "@types/node": "^9.4.7",
+    "@types/react": "^16.0.40",
+    "@types/react-dom": "^16.0.4",
+    "@types/react-grid-layout": "^0.16.4",
+    "create-react-app": "^1.5.2",
+    "node-sass-chokidar": "^1.1.0",
+    "npm-run-all": "^4.1.2",
+    "typescript": "^2.7.2"
+  }
+}
