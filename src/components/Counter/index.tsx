@@ -5,6 +5,7 @@ import IconButton from 'material-ui/IconButton';
 import './styles.css';
 
 interface CounterProps {
+    id?: number;
     value: number;
     increment?: number;
     minValue?: number;
