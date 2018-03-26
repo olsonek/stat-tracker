@@ -12,11 +12,20 @@ import { TextField } from 'material-ui';
 
 interface StatListProps {
     counters: CounterState[];
-    createCounter: () => void;
+    createCounter: (description?: string, minValue?: number, maxValue?: number, maxValueDisplay?: number) => void;
     deleteCounter: (id: number) => void;
     incrementCounter: (id: number) => void;
     decrementCounter: (id: number) => void;
-    counterDescription: string;
+
+    description?: string;
+    minValue?: number;
+    maxValue?: number;
+    maxValueDisplay?: number;
+
+    updateDescription: (value?: string) => void;
+    updateMinValue: (value?: number) => void;
+    updateMaxValue: (value?: number) => void;
+    updateMaxValueDisplay: (value?: number) => void;
 }
 
 export const StatList: React.StatelessComponent<StatListProps> = (props) => {
@@ -31,7 +40,8 @@ export const StatList: React.StatelessComponent<StatListProps> = (props) => {
                         value={counter.value}
                         onIncrement={() => props.incrementCounter(counter.id)}
                         onDecrement={() => props.decrementCounter(counter.id)}
-                        description={props.counterDescription}
+                        description={counter.description}
+                        maxValueDisplay={counter.maxValueDisplay}
                     />
                     <IconButton onClick={() => props.deleteCounter(counter.id)}>
                         <ContentRemove />
@@ -44,13 +54,32 @@ export const StatList: React.StatelessComponent<StatListProps> = (props) => {
     return (
         <div className={'stat-list'}>
             <div className={'toolbar'}>
-                <IconButton onClick={() => props.createCounter()}>
+                <IconButton onClick={() => props.createCounter(props.description, props.minValue, props.maxValue, props.maxValueDisplay)}>
                     <ContentAdd />
                 </IconButton>
-                <TextField hintText="Description" />
-                <TextField hintText="Min Value" type={'number'} />
-                <TextField hintText="Max Value" type={'number'} />
-                <TextField hintText="Max Value Display" type={'number'} />
+                <TextField
+                    hintText="Description"
+                    value={props.description}
+                    onChange={(event: object, newValue: string) => props.updateDescription(newValue)}
+                />
+                <TextField
+                    hintText="Min Value"
+                    type={'number'}
+                    value={props.minValue}
+                    onChange={(event: object, newValue: string) => props.updateMinValue(Number(newValue))}
+                />
+                <TextField
+                    hintText="Max Value"
+                    type={'number'}
+                    value={props.maxValue}
+                    onChange={(event: object, newValue: string) => props.updateMaxValue(Number(newValue))}
+                />
+                <TextField
+                    hintText="Max Value Display"
+                    type={'number'}
+                    value={props.maxValueDisplay}
+                    onChange={(event: object, newValue: string) => props.updateMaxValueDisplay(Number(newValue))}
+                />
             </div>
             <List>
                 {listItems}

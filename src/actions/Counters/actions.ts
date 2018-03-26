@@ -2,6 +2,12 @@ import Types from './types';
 
 export interface CreateCounterAction {
     type: Types.CREATE_COUNTER;
+    payload: {
+        description?: string;
+        minValue?: number;
+        maxValue?: number;
+        maxValueDisplay?: number;
+    };
 }
 
 export interface DeleteCounterAction {
