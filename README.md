@@ -18,5 +18,5 @@ This app serves to enable users to track as much or as little information as the
 [appveyor-url]: https://ci.appveyor.com/project/olsonek/stat-tracker/branch/master
 [david-dev-image]: https://david-dm.org/olsonek/stat-tracker/dev-status.svg
 [david-dev-url]: https://david-dm.org/olsonek/stat-tracker?type=dev
-[david-image]: https://david-dm.org/olsonek/stat-tracker.git
+[david-image]: https://david-dm.org/olsonek/stat-tracker/status.svg
 [david-url]: https://david-dm.org/olsonek/stat-tracker
