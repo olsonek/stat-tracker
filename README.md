@@ -23,7 +23,7 @@ npm start
 
 ## Built with
 
-- [Create-React-App][create-react-app-url] with [TypeScript][create-react-app-ts-url]
+- [Create-React-App][create-react-app-url] with a [TypeScript Configuration][create-react-app-ts-url]
 - [React][react-url]
 - [Redux][redux-url]
 - [Reselect][reselect-url]
