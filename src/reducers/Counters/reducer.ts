@@ -1,6 +1,6 @@
 import { getCounter, getCounterIncrement } from './selectors';
 import { AppState } from '../initialState';
-import { CountersActionTypes, CountersAction } from 'actions';
+import { CountersActionTypes, CountersAction } from '../../actions';
 import { CounterState } from './state';
 
 const countersReducer = (state: AppState, action: CountersAction) => {

@@ -5,7 +5,7 @@ import {
     CountersActionTypes, CountersAction,
     StatListActionTypes, StatListAction,
 } from '../actions';
-import { StatListReducer } from 'reducers/StatList';
+import { StatListReducer } from './StatList';
 
 const RootReducer = (state: AppState = initialState, action: Action = OtherAction) => {
     if (action.type in CountersActionTypes) {

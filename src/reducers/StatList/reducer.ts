@@ -1,5 +1,5 @@
 import { AppState } from '../initialState';
-import { StatListAction, StatListActionTypes } from 'actions';
+import { StatListAction, StatListActionTypes } from '../../actions';
 
 const statListReducer = (state: AppState, action: StatListAction) => {
     switch (action.type) {
