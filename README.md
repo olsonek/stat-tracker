@@ -1,5 +1,11 @@
 # stat-tracker
 
+[![Build status][appveyor-image]][appveyor-url]
+[![Dependency Status][david-image]][david-url]
+[![devDependency Status][david-dev-image]][david-dev-url]
+
+## Summary
+
 stat-tracker is an app designed to present data in a simple, yet highly customizable way.
 
 ## Motivation
@@ -8,20 +14,21 @@ As a tabletop enthusiast, I wanted a straightforward means by which I can track 
 
 This app serves to enable users to track as much or as little information as they want without getting in the way.
 
-## Build Status
+## Getting Started
 
-[![Build status][appveyor-image]][appveyor-url]
-[![Dependency Status][david-image]][david-url]
-[![devDependency Status][david-dev-image]][david-dev-url]
+```bash
+npm install
+npm start
+```
 
 ## Built with
 
-- create-react-app
-- react
-- redux
-- reselect
-- material-ui
-- react-grid-layout
+- [Create-React-App][create-react-app-url] with [TypeScript][create-react-app-ts-url]
+- [React][react-url]
+- [Redux][redux-url]
+- [Reselect][reselect-url]
+- [Material-UI][material-ui-url]
+- [React-Grid-Layout][react-grid-layout-url]
 
 ## Features
 
@@ -50,13 +57,6 @@ This app serves to enable users to track as much or as little information as the
 - GridView
   - Rearrange your dashboard
 
-## Getting Started
-
-```bash
-npm install
-npm start
-```
-
 ## License
 
 All rights reserved © [Eddie Olson][olsonek-url]
@@ -68,3 +68,11 @@ All rights reserved © [Eddie Olson][olsonek-url]
 [david-image]: https://david-dm.org/olsonek/stat-tracker/status.svg
 [david-url]: https://david-dm.org/olsonek/stat-tracker
 [olsonek-url]: https://github.com/olsonek
+
+[create-react-app-url]: https://github.com/facebook/create-react-app
+[create-react-app-ts-url]: https://github.com/wmonk/create-react-app-typescript
+[react-url]: https://reactjs.org
+[redux-url]: https://redux.js.org
+[reselect-url]: https://github.com/reactjs/reselect
+[material-ui-url]: http://www.material-ui.com
+[react-grid-layout-url]: https://github.com/STRML/react-grid-layout
