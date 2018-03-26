@@ -1,6 +1,7 @@
 {
   "globalDependencies": {
     "material-ui": "registry:dt/material-ui#0.16.0+20170323194905",
-    "redux": "registry:dt/redux#3.5.2+20160703092728"
+    "redux": "registry:dt/redux#3.5.2+20160703092728",
+    "reselect": "registry:dt/reselect#2.0.2+20160510002910"
   }
 }
