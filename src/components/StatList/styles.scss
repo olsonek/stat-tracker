@@ -1,0 +1,13 @@
+.stat-list {
+    .item {
+        display: flex;
+        align-items: center;
+    }
+    .toolbar {
+        display: flex;
+        align-content: flex-start;
+        input[type=number]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+    }
+}

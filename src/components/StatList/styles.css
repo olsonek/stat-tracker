@@ -1,0 +1,9 @@
+.stat-list .item {
+  display: flex;
+  align-items: center; }
+
+.stat-list .toolbar {
+  display: flex;
+  align-content: flex-start; }
+  .stat-list .toolbar input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none; }

@@ -1,17 +1,8 @@
-
-export interface CounterState {
-    id: number;
-    value: number;
-    increment?: number;
-    minValue?: number;
-    maxValue?: number;
-    maxValueDisplay?: number;
-    description?: string;
-}
+import { CounterState } from './Counters';
 
 export interface AppState {
     latestId: number;
-    Counters: 	{ [key: number]: CounterState; };
+    Counters: { [key: number]: CounterState; };
 }
 
 const initialState: AppState = {

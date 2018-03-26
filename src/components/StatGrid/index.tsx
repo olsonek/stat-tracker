@@ -5,8 +5,6 @@ import 'react-grid-layout/css/styles.css';
 import 'react-resizable/css/styles.css';
 import './styles.css';
 
-import Counter from '../Counter';
-
 class StatGrid extends React.Component {
     render() {
         // layout is an array of objects, see the demo for more complete usage
@@ -25,10 +23,7 @@ class StatGrid extends React.Component {
                 compactType={null}
             >
                 <div key="a">a</div>
-                <div key="b"><Counter
-                    value={200}
-                    updateValue={() => { return; }}
-                /></div>
+                <div key="b">b</div>
                 <div key="c">c</div>
             </ReactGridLayout>
         );
